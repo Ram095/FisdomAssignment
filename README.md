@@ -12,6 +12,12 @@ User can delete the cards which also gets deleted from the local Storage
 2. Auto Tab after the user has entered the data into the input field
 3. Master Card, Visa, Discover - 16 digits, CVV - 3 digits
 4. American Express - 15 digits, CVV - 4 digits
+
+  Master Card starts with - 51 to 55
+  Visa starts with - 4
+  Discover starts with 6011, 622126-622925, 644-649, 65
+  American Express starts with 34 or 37
+        
 5. Local Storage limit is checked and only then new cards are added
 6. CVV is not displayed in the list as it is private
 7. Only the last 4 digits of Card Number are displayed and rest are replaced with an 'X'
