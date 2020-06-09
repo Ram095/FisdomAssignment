@@ -18,5 +18,5 @@ User can delete the cards which also gets deleted from the local Storage
 8. Success message on successfull addition of a card is displayed
 9. List is displayed if present otherwise 'no saved cards available' message is displayed to the user
 
-No external library has been used.
-Bootstrap.min.css is used for styling
+Only Bootstrap.min.css is used.
+No other external library has been used.
