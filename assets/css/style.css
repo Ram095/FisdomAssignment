@@ -1,0 +1,64 @@
+.cardInfosection{
+    background: #f9f9f9;
+    box-shadow: 0px 4px 10px 1px #ac92ec6e;
+    padding: 25px;
+    border-radius: 15px;
+  }
+
+  .input-group-addon>img {
+    width: 20px;
+  }
+
+  .caption{
+    display: flex; justify-content: space-between;align-items: center;
+  }
+
+  .caption>img{
+    height: 40px;
+    width:auto;
+  }
+
+  #cardList .title{
+    position: relative;
+    left:-15px;
+  }
+
+  #nocards{
+    display: none;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #AC92EC;
+    color: white;
+  }
+
+  #nocards .caption{
+    color: #fff;
+  }
+
+  .error{
+    border: 2px solid #ff0101;
+  }
+
+  .successMessage{
+    margin-top: 15px;
+    display: none;
+    padding: 20px;
+    background: #1ABC9C;
+    color: white;
+    border-radius: 15px;
+  }
+
+  .successMessage>span{
+    padding-left: 10px;
+  }
+
+  .card_deleteIcon{
+    position: absolute;
+    right:-25px
+  }
+
+  .p-0{
+    padding: 0px;
+  }

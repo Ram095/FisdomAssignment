@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Payment Gateway</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+  </head>
+  <body onload="getcardList()">
+      <div class="container" >
+        <h2>Payment Gateway</h2>
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="col-md-5" id="cardList">
+              <p class="title">List of saved cards</p>
+                <div class="row">
+                  <div id="list" >
+                      <div id="nocards" class="thumbnail"> 
+                        <div class="caption">No saved cards available</div>
+                      </div>
+                  </div>
+                </div>
+            </div>
+            <div class="col-md-2"></div>
+            <div class="col-md-5 col-md-offset-2 p-0">
+            <p>Please enter card details to add new card</p>
+              <div class="cardInfosection">
+                <form id="payment_information">
+                  <div class="row">
+                    <div class="col-xs-12">
+                      <div class="form-group">
+                        <label for="cardNumber">Card Number</label>
+                        <div class="input-group">
+                          <span class="input-group-addon" id="card"><img id="cardType" src="assets/images/credit-card.png"></span>
+                          <input class="form-control" id="cardNumber" type="text" placeholder="Card number" onpaste="return false" aria-describedby="card" onfocus="removeErrorClass('cardNumber')"  onkeyup="validateCard_format('cardNumber');" autocomplete="off">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-xs-6">
+                      <div class="form-group">
+                        <label for="expiryDate">Expiry Date</label>
+                        <input type="month" id="expiryDate" onfocus="removeErrorClass('expiryDate')" onchange="focusNext('cvv')" onpaste="return false" class="form-control" >
+                      </div>
+                    </div>
+                    <div class="col-xs-6">
+                      <div class="form-group">
+                        <label for="cvv">CVV</label>
+                        <input type="password" maxlength="4" class="form-control" id="cvv" onfocus="removeErrorClass('cvv')" onpaste="return false" onkeyup="validateCVV_format('cvv');"  placeholder="CVV">
+                      </div>
+                    </div>
+                    <div class="col-xs-12 text-right">
+                      <button type="button" class="btn btn-primary" onclick="addCard()">Add</button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+              <div id="successMessage" class="successMessage">
+                  <i class="glyphicon glyphicon-ok"></i><span>Card details added successfully</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    <script src="main.js"></script>
+  </body>
+</html>
