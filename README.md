@@ -17,3 +17,6 @@ User can delete the cards which also gets deleted from the local Storage
 7. Only the last 4 digits of Card Number are displayed and rest are replaced with an 'X'
 8. Success message on successfull addition of a card is displayed
 9. List is displayed if present otherwise 'no saved cards available' message is displayed to the user
+
+No external library has been used.
+Bootstrap.min.css is used for styling
